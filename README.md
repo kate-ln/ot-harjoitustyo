@@ -8,4 +8,4 @@ The *development enviroment* is Python `3.10.12`.
 The ***description*** will appear here **later**.
 
 #### Laskarit
-- [Laskarit](ot-harjoitustyo/tree/main/laskarit)
+- [Laskarit](laskarit)
