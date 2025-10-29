@@ -70,3 +70,13 @@ class TestMaksukortti(unittest.TestCase):
 
         self.assertEqual(kortti.saldo_euroina(), 0.0)
         self.assertEqual(str(kortti), "Kortilla on rahaa 0.00 euroa")
+
+        self.assertEqual(kortti.saldo_euroina(), 0.0)
+        self.assertEqual(str(kortti), "Kortilla on rahaa 0.00 euroa")
+
+    def test_kortilla_voi_ostaa_maukkaan_lounaan(self):
+        kortti = Maksukortti(400)
+        kortti.syo_maukkaasti()
+
+        self.assertEqual(kortti.saldo_euroina(), 0.0)
+        self.assertEqual(str(kortti), "Kortilla on rahaa 0.00 euroa")
